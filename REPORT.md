@@ -65,7 +65,7 @@ The English and Russian answers passed the checklist. Both responses correctly s
 
 The Kazakh answer also followed the main instruction by acknowledging that no documents were available and by avoiding specific claims about the contract contents. However, it introduced general speculation about possible reasons for rate changes, such as bank policy or market conditions, even though this information was not present in the provided documents. This suggests that additional evaluation of Kazakh-language responses is necessary before production deployment.
 
-For production, I would choose **DeepSeek V4 Flash**. It produced acceptable responses in all three languages while maintaining a very low operating cost compared to the Claude models used in the cost comparison. Based on the annual cost estimates, DeepSeek V4 Flash would cost approximately **$50.73 per year for English**, **$64.48 per year for Russian**, and **$157.54 per year for Kazakh** at a workload of 2,000 requests per day.
+Based on the results of this lab, I would select **DeepSeek V4 Flash as the primary candidate for production deployment**. It produced acceptable responses in all three languages while maintaining a significantly lower operating cost than the Claude models used in the cost comparison. Based on the annual cost estimates calculated in this report, DeepSeek V4 Flash would cost approximately **$50.73 per year for English**, **$64.48 per year for Russian**, and **$157.54 per year for Kazakh** at a workload of 2,000 requests per day.
 
 However, cost alone is not sufficient for a production decision. The results show that answer quality, instruction following, and hallucination risk must also be considered. While DeepSeek V4 Flash demonstrated strong cost efficiency, additional testing on real Kazakh-language support cases would be required before deployment in a customer-support environment.
 
@@ -77,4 +77,4 @@ One cost lever not used in this lab is **prompt caching**, where the repeated sy
 
 ## AI Usage Declaration
 
-AI tools were used to assist with adapting the provided lab code to work with the selected model (**DeepSeek V4 Flash**) and to help explain some concepts related to tokenization and cost calculation. All experiments, measurements, code execution, calculations, analysis, and final conclusions presented in this report were performed and verified by the author.
+AI tools were used to assist with adapting the provided lab code to work with the selected model (**DeepSeek V4 Flash**) and to help explain some concepts related to tokenization and cost calculation. All experiments, measurements, command execution, calculations, result verification, analysis, and final conclusions presented in this report were performed and verified by the author.
